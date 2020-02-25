@@ -43,6 +43,10 @@
   font-size: 60px;
   color: black;
 }
+/* .portfolio{
+  color:white;
+  background-color: #121212;
+} */
 </style>
 <body id="page-top">
 
@@ -114,6 +118,17 @@
 
       <!-- Portfolio Grid Items -->
       <div class="row">
+         <!-- Portfolio Item 0 -->
+         <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa0">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/ws/thum.png" alt="">
+          </div>
+        </div>
 
         <!-- Portfolio Item 1 -->
         <div class="col-md-6 col-lg-4">
@@ -123,7 +138,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/ai/1.png" alt="">
+            <img class="img-fluid" src="img/ai/thumb.png" alt="">
           </div>
         </div>
 
@@ -135,7 +150,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/ecommerce/1.png" alt="">
+            <img class="img-fluid" src="img/ecommerce/thumb.png" alt="">
           </div>
         </div>
 
@@ -147,7 +162,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/blog/1.png" alt="">
+            <img class="img-fluid" src="img/blog/thumb.png" alt="">
           </div>
         </div>
 
@@ -159,7 +174,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/news/1.png" alt="">
+            <img class="img-fluid" src="img/news/thumb.png" alt="">
           </div>
         </div>
 
@@ -171,7 +186,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/assets/blog.png" alt="">
+            <img class="img-fluid" src="img/quakereport/thumb.png" alt="">
           </div>
         </div>
 
@@ -346,6 +361,81 @@
   </div>
 
   <!-- Portfolio Modals -->
+<!-- Portfolio Modal 0 -->
+<div class="portfolio-modal modal fade" id="portfolioModa0" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times"></i>
+        </span>
+      </button>
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- Portfolio Modal - Title -->
+              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Women Safety App.</h2>
+              <!-- Icon Divider -->
+              <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+              </div>
+              <!-- Portfolio Modal - Image -->
+              <!-- <img class="img-fluid rounded mb-5" 
+              src="img/assets/AI.png" alt=""> -->
+
+
+
+
+              <div id="carouselExampleControls0" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/ws/1-ws.png" alt="">
+                  </div>
+                  
+                
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls0" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
+                  <span class="sr-only" style="color: black;">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls0" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" style="color: black;" aria-hidden="true"></span>
+                  <span class="sr-only" style="color: black;">Next</span>
+                </a>
+                </div>
+
+                <div>
+                  <!-- <a class="btn btn-outline-primary mr-5 m-2" href="http://www.ecommercewebapp.pythonanywhere.com">View Website</a> -->
+                  <a class="btn btn-outline-primary ml-5 m-2" href="https://www.github.com/shubhamsks" target="_blank">View Code</a>
+                </div>
+              <!-- Portfolio Modal - Text -->
+
+              <p class="mb-5">
+                Built an android app for a hackathon theme on Women Safety, and <b>won 3'rd prize out of 30 teams.</b>
+              <ul>
+                <li>Implemented emergency features like click the power button 5 times and message will be sent to your emergency contact and background recording will start.</li>
+                <li>Implemented live location tracking feature so, user can track the location of the person who is in emergency.</li>
+                <li>Implemented Rating System, users can rate the place and check the rating of the place using map.</li>
+                <li>Used firebase to store all the data of users, location information, ratings.</li>
+                <li>Worked in team of 5 developers.</li>
+              </ul>
+              </p>
+              <button class="btn btn-primary" href="#" data-dismiss="modal">
+                <i class="fas fa-times fa-fw"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Portfolio Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
@@ -417,7 +507,7 @@
 
                   <div>
                     <!-- <a class="btn btn-outline-primary mr-5 m-2" href="http://www.ecommercewebapp.pythonanywhere.com">View Website</a> -->
-                    <a class="btn btn-outline-primary ml-5 m-2" href="https://www.github.com/shubhamsks">View Code</a>
+                    <a class="btn btn-outline-primary ml-5 m-2" href="https://github.com/shubhamsks/dog_project_web_app" target="_blank">View Code</a>
                   </div>
                 <!-- Portfolio Modal - Text -->
 
@@ -498,7 +588,7 @@
                   </div>
                   <div>
                     <a class="btn btn-outline-primary mr-5 m-2" href="http://ecommercewebapp.pythonanywhere.com/" target="_blank">View Website</a>
-                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://www.github.com/shubhamsks">View Code</a>
+                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://github.com/shubhamsks/ecommerce_production">View Code</a>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
@@ -582,7 +672,7 @@
                   </div>
                   <div>
                     <a class="btn btn-outline-primary mr-5 m-2" href="http://hackersblog.pythonanywhere.com/" target="_blank">View Website</a>
-                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://www.github.com/shubhamsks">View Code</a>
+                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://github.com/shubhamsks/blog_application">View Code</a>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
@@ -653,7 +743,7 @@
                   </div>
                   <div>
                     <a class="btn btn-outline-primary mr-5 m-2" href="https://shubhamsks.github.io/news-app" target="_blank">View Website</a>
-                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://www.github.com/shubhamsks">View Code</a>
+                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://github.com/shubhamsks/news-app">View Code</a>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
@@ -705,7 +795,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Quakereport </h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -715,9 +805,42 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+
+                <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/quakereport/1.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/quakereport/2.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/quakereport/3.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/quakereport/4.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <a class="btn btn-outline-primary ml-5 m-2" target ="_blank" href="https://github.com/shubhamsks/quake-report-app">View Code</a>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
+                    <span class="sr-only" style="color: black;">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" style="color: black;" aria-hidden="true"></span>
+                    <span class="sr-only" style="color: black;">Next</span>
+                  </a>
+                  </div>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">
+                  It is a basic android app written in java. This app retrieves the earthquakes happened all over the world recently.
+                  By using api provided by USGS. 
+                  <li>You can order the earthquakes by most recent, and magnitude, and set the minimum magnitude in settings.</li>
+                  <li>Implemented a magnitude indicator which changes the color according to the magnitude of the earthquake.</li>
+                  <li>Used List Adapter View to display earthquakes.</li>
+                </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
