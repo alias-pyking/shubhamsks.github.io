@@ -1,0 +1,60 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: none;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: none;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 60px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 60px;
+  color: black;
+}
+
+.programming li{
+    display: flex;
+    margin:8px;
+}
+.title {
+    font-family: sans-serif;
+    display:block;
+    margin:10px;
+}
+.skill-thumb{
+    height:50px;
+    width: 50px;
+}
+.about-description{
+    padding:10px;
+}
+.skills li{
+    display:flex;
+    margin:8px;
+}
+.heading{
+    padding:10px;
+}
+
+.invisible{
+    visibility: hidden;
+    display:none;
+    cursor: none;
+}
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .active {
+    border-bottom: 1px solid #333;
+} */

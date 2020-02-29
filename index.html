@@ -17,37 +17,8 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
-
+  <link href="css/main.css" rel="stylesheet">
 </head>
-<style>
- .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: none;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: none;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 60px;
-  color: black;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 60px;
-  color: black;
-}
-/* .portfolio{
-  color:white;
-  background-color: #121212;
-} */
-</style>
 <body id="page-top">
 
   <!-- Navigation -->
@@ -82,7 +53,7 @@
       <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
 
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Hello It's shubham,nice to meet you.</h1>
+      <h1 class="masthead-heading text-uppercase mb-0 heading">Hello It's shubham,nice to meet you.</h1>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -106,7 +77,16 @@
 
       <!-- Portfolio Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+     <div class="filter col-md-8">
+       <button id = "allFilter" class="btn btn-dark m-2">All</button>
+      <button id = "androidFilter"class='btn btn-dark m-2'>Android</button>
+      <button id = "webFilter"class='btn btn-dark m-2'>WEB</button>
+      <button id = "aiFilter"class='btn btn-dark m-2'>ML</button>
+      <button id = "reactFilter"class='btn btn-dark m-2'>React</button>
+      <button id = "djangoFilter"class='btn btn-dark m-2'>Django</button>
+      <button id = "nodeFilter"class='btn btn-dark m-2'>Node</button>
 
+     </div>
       <!-- Icon Divider -->
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
@@ -119,7 +99,7 @@
       <!-- Portfolio Grid Items -->
       <div class="row">
          <!-- Portfolio Item 0 -->
-         <div class="col-md-6 col-lg-4">
+         <div class="col-md-6 col-lg-4 android project">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa0">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -131,7 +111,7 @@
         </div>
 
         <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 ai project">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -143,7 +123,7 @@
         </div>
 
         <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 web django project">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -155,7 +135,7 @@
         </div>
 
         <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 web django project">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -167,7 +147,7 @@
         </div>
 
         <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 web react project">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -179,7 +159,7 @@
         </div>
 
         <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 android project">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -189,19 +169,6 @@
             <img class="img-fluid" src="img/quakereport/thumb.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 6 -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/assets/IMG_20190730_140748.jpg" alt="">
-          </div>
-        </div> -->
-
       </div>
       <!-- /.row -->
 
@@ -226,21 +193,68 @@
 
       <!-- About Section Content -->
       <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
+        <!-- <div class="col-lg-4 ml-auto"> -->
+          <p class="lead about-description">HI MY NAME IS SHUBHAM, I AM A COMPUTER SCIENCE STUDENT AND WILL BE GRADUATING IN 2021. I AM EXPRIENCED IN FULLSTACK WEB DEVELOPMENT USING PYTHON AND JAVASCRIPT, ANDROID DEVELOPMENT USING JAVA, FIREBASE. AND HAVE BUILT VARIOUS SIDE PROJECTS. OTHER THAN DEVELOPMENT, I HAVE LITTLE KNOWLEDGE OF MACHINE LEARING/DEEP LEARNING TOO. SEE MY SKILLS IF IT MATCHES YOUR REQUIRMENTS.
+          </p>
+            <div class="programming col-lg-4 mr-auto">
+              <h3>Programming lanuages</h3>
+              <ul>
+                <li>
+                  <img class="skill-thumb" src="https://img.icons8.com/metro/52/000000/python.png">
+                  <h4 class="title">PYTHON</h4>
+
+                </li>
+                <li>
+                  <img class="skill-thumb" src="https://img.icons8.com/metro/52/000000/js.png">
+                  <h4 class="title">JAVASCRIPT</h4>
+                </li>
+                <li>
+                  <img class="skill-thumb" src="https://img.icons8.com/material-outlined/48/000000/java-coffee-cup-logo.png">
+                  <h4 class="title">JAVA</h4>
+                </li>
+                <li>
+                  <img class="skill-thumb" src="https://img.icons8.com/material-rounded/48/000000/c-plus-plus.png">
+                  <h4 class="title">C++</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="skills col-lg-4">
+              <h3>Frameworks/Tools</h3>
+               <ul>
+                 <li>
+                  <img src="https://img.icons8.com/material-outlined/48/000000/django.png" class="skill-thumb">
+                  <h4 class="title">Django</h4>
+                 </li>
+                 <li>
+                  <img src="https://img.icons8.com/material-outlined/48/000000/react-native.png" class="skill-thumb">
+                  <h4 class="title">React / Redux</h4>
+                 </li>
+                 <li>
+                  <img src="https://img.icons8.com/material/48/000000/js.png" class="skill-thumb">
+                  <h4 class="title">Node js</h4>
+                 </li>
+                 <li>
+                  <img src="https://img.icons8.com/material-outlined/48/000000/api-settings.png" class="skill-thumb">
+                  <h4 class="title">REST</h4>
+                 </li>
+                 <li>
+                  <img src="https://img.icons8.com/material-outlined/48/000000/merge-git.png" class="skill-thumb">
+                  <h4 class="title">GIT (version control )</h4>
+                 </li>
+                 <li>
+                  <img src="https://img.icons8.com/material/50/000000/android-os--v1.png" class="skill-thumb">
+                  <h4 class="title">Android development</h4>
+                 </li>
+               </ul>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 mr-auto">
           <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-        </div>
+        </div> -->
+
       </div>
 
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
-      </div>
+    
 
     </div>
   </section>
@@ -556,8 +570,6 @@
                 </div>
                 
                 <!-- Portfolio Modal - Image -->
-                
-
                 <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -690,7 +702,8 @@
                   <li>This application allows the admin and staff users to write blogs and
                     other users can read same</li>
                     <li>Implemented markdown editor. It shows realtime preview of what post will look like.</li>
-                      <li>Implemented all the CRUD operations,Search and , User Authentication and </li>Zxcvb n 5data-dismiss="modal">
+                      <li>Implemented all the CRUD operations,Search and , User Authentication and </li>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
                 </button>
@@ -905,6 +918,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- Custom script for filtering -->
+  <script src="js/main.js"></script>
 
 </body>
 
